@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuanLyActitivy">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@color/white"
+        android:elevation="4dp"
+        app:title="App"
+        app:popupTheme="@color/black"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:id="@+id/tieude"
+        android:text="Quản lý"
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:textSize="14pt"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnLoaiXe"
+        android:layout_width="0pt"
+        android:layout_height="0dp"
+        android:text="Loai Xe Dap"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:layout_marginTop="10pt"
+        android:layout_marginStart="10pt"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#756AB6"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/tieude"
+        />
+    <Button
+        android:id="@+id/btnXeDap"
+        android:layout_width="0pt"
+        android:layout_height="0dp"
+        android:text="Xe Dap"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:layout_marginTop="10pt"
+        android:layout_marginStart="10pt"
+        app:layout_constraintStart_toEndOf="@id/btnLoaiXe"
+        android:background="#756AB6"
+        android:layout_marginEnd="10pt"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toBottomOf="@id/tieude"
+        app:layout_constraintBottom_toBottomOf="@id/btnLoaiXe"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
